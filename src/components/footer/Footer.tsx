@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    href="/blog"
+                    href="#"
                     className="hover:text-[#2591c2] transition font-bold text-zinc-200"
                   >
                     Blog
