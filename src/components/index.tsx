@@ -21,7 +21,7 @@ export const HomPage = () => {
                 "ALFA MAROC TECH INDUSTRIE"
               }
               subtitle={
-                  "Souverainetés Industrielle Marocaine"
+                "Souverainetés Industrielle Marocaine"
               }
               buttonText="Découvrez notre catalogue"
               buttonLink="/catalogue.pdf"
@@ -29,6 +29,13 @@ export const HomPage = () => {
             />          </div>
           {/* Rest of the content */}
           <div className="mx-auto max-w-5xl px-4 md:px-8 space-y-32">
+            <div className="w-full">
+              <img
+                src="/images/amti.jpg"
+                alt="Présentation d'AMTI"
+                className="w-full rounded-2xl shadow-lg"
+              />
+            </div>
             <About />
             <Strength />
             <Sectors />
