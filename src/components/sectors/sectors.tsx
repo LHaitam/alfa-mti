@@ -5,7 +5,7 @@ import Link from "next/link";
 export const Sectors = () => {
     return (
         <section id="sectors" className="text-black">
-            <SectionHeader title="Nos&nbsp;Secteurs&nbsp;D&apos;Activités" dir="l" />
+            <SectionHeader title="Nos&nbsp;Secteurs" dir="l" />
             <div className="container mx-auto px-4">
                 <Reveal>
                     <p className="text-center text-justify text-black mb-12 leading-relaxed">
