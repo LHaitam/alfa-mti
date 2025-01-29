@@ -178,8 +178,7 @@ const SectorsContent = () => {
   return (
     <div className="w-full bg-white p-6 shadow-none lg:w-[250px] lg:shadow-xl">
       <div className="grid grid-cols-2 lg:grid-cols-1">
-        <div className="mb-3 space-y-3">
-          <h3 className="font-semibold">Nos domaines d'expertise incluent :</h3>
+        <div className="mb-3 space-y-3 text-lg font-bold py-3">
           <Link href="/sectors/medical" passHref>
             <a className="block text-sm hover:underline">Médical</a>
           </Link>

@@ -53,25 +53,27 @@ export const ProcessSection: React.FC = () => {
       <Reveal>
         <>
           <SectionHeader title="Notre&nbsp;Processus&nbsp;de&nbsp;Fabrication" dir="l" />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-8">
-            {steps.map((step, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center text-center p-6 bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300"
-              >
-                <img
-                  src={step.icon}
-                  alt={step.title}
-                  className="w-16 h-16 mb-4"
-                />
-                <h3 className="text-xl font-bold text-[#154a77] mb-2">
-                  {step.title}
-                </h3>
-                <p className="text-black leading-relaxed text-justify">
-                  {step.description}
-                </p>
-              </div>
-            ))}
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
+              {steps.map((step, index) => (
+                <div
+                  key={index}
+                  className="w-full max-w-[90%] mx-auto flex flex-col items-center text-center p-6 bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300"
+                >
+                  <img
+                    src={step.icon}
+                    alt={step.title}
+                    className="w-16 h-16 mb-4"
+                  />
+                  <h3 className="text-xl font-bold text-[#154a77] mb-2">
+                    {step.title}
+                  </h3>
+                  <p className="text-black leading-relaxed text-justify">
+                    {step.description}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </>
       </Reveal>
