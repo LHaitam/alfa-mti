@@ -212,17 +212,11 @@ const MobileMenuLink = ({
       {FoldContent ? (
         <div
           className="flex w-full cursor-pointer items-center justify-between border-b border-neutral-300 py-6 text-start text-2xl font-semibold"
-          onClick={() => setOpen((pv: any) => !pv)}
+          onClick={() => setOpen((pv) => !pv)}
         >
-          <a
-            onClick={(e) => {
-              e.stopPropagation();
-              setMenuOpen(false);
-            }}
-            href={href}
-          >
-            {children}
-          </a>
+          <Link href={href}>
+            <a onClick={() => setMenuOpen(false)}>{children}</a>
+          </Link>
           <motion.div
             animate={{ rotate: open ? "180deg" : "0deg" }}
             transition={{
@@ -234,17 +228,15 @@ const MobileMenuLink = ({
           </motion.div>
         </div>
       ) : (
-        <a
-          onClick={(e) => {
-            e.stopPropagation();
-            setMenuOpen(false);
-          }}
-          href="#"
-          className="flex w-full cursor-pointer items-center justify-between border-b border-neutral-300 py-6 text-start text-2xl font-semibold"
-        >
-          <span>{children}</span>
-          <FiArrowRight />
-        </a>
+        <Link href={href}>
+          <a
+            className="flex w-full cursor-pointer items-center justify-between border-b border-neutral-300 py-6 text-start text-2xl font-semibold"
+            onClick={() => setMenuOpen(false)}
+          >
+            <span>{children}</span>
+            <FiArrowRight />
+          </a>
+        </Link>
       )}
       {FoldContent && (
         <motion.div
@@ -264,6 +256,7 @@ const MobileMenuLink = ({
     </div>
   );
 };
+
 
 const MobileMenu = () => {
   const [open, setOpen] = useState(false);
