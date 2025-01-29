@@ -26,6 +26,13 @@ export const HomPage = () => {
           </div>
           {/* Rest of the content */}
           <div className="container mx-auto max-w-5xl px-4 md:px-8 space-y-32 overflow-hidden">
+            <div className="w-full">
+              <img
+                src="/images/amti.jpg"
+                alt="Présentation d'AMTI"
+                className="w-full rounded-2xl shadow-lg"
+              />
+            </div>
             <About />
             <Strength />
             <Sectors />
