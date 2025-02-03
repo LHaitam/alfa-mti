@@ -17,7 +17,7 @@ export const About = () => {
           </Reveal>
           <Reveal>
             <p className="leading-relaxed text-black">
-              En combinant innovation technologique et savoir-faire local, nous proposons une gamme complète d&apos;équipements, incluant des chariots médicaux ergonomiques et des tables opératoires en inox. Notre mission : offrir des solutions fiables et durables.
+              En combinant innovation technologique et savoir-faire local, nous proposons une gamme complète d&apos;équipements. Notre mission : offrir des solutions fiables et durables.
             </p>
           </Reveal>
           <Reveal>

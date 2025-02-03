@@ -68,10 +68,42 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/strengths"
                     className="hover:text-[#2591c2] transition font-bold text-zinc-200"
                   >
-                    Blog
+                    Nos Forces
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/sectors/medical"
+                    className="hover:text-[#2591c2] transition font-bold text-zinc-200"
+                  >
+                    Secteur Médical
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/sectors/railway"
+                    className="hover:text-[#2591c2] transition font-bold text-zinc-200"
+                  >
+                    Secteur Férroviaire
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/products/medical"
+                    className="hover:text-[#2591c2] transition font-bold text-zinc-200"
+                  >
+                    Produits Médicaux
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/products/railway"
+                    className="hover:text-[#2591c2] transition font-bold text-zinc-200"
+                  >
+                    Produits Férroviaires
                   </Link>
                 </li>
               </ul>
@@ -96,7 +128,7 @@ const Footer: React.FC = () => {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="/terms"
+                    href="#"
                     className="hover:text-[#2591c2] transition font-bold text-zinc-200"
                   >
                     Conditions générales

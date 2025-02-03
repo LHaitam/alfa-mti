@@ -1,3 +1,5 @@
+// pages/_document.tsx
+
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
@@ -11,7 +13,6 @@ export default function Document() {
 
         {/* Meta SEO */}
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
         <meta
           name="description"
           content="AMTI - Alfa Maroc Tech Industrie est un leader marocain dans la fabrication d'équipements médicaux et ferroviaires innovants. Découvrez nos solutions sur mesure pour le secteur hospitalier et l'industrie ferroviaire."

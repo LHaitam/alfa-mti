@@ -114,7 +114,7 @@ export const OPTIONS = [
     title: "Tables",
     Content: () => (
       <Testimonial
-        imgSrc="/images/products/table.png"
+        imgSrc="/images/products/ta-04.png"
         name="TABLES"
         title="Adaptables et robustes"
         company="AMTI"

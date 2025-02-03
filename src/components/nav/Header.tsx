@@ -102,7 +102,7 @@ const NavLink = ({
           style={{
             transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
           }}
-          className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-[#007BFF] transition-transform duration-300 ease-out"
+          className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-[#2591c2] transition-transform duration-300 ease-out"
         />
       </a>
       <AnimatePresence>
@@ -145,14 +145,14 @@ const AboutUsContent = () => {
             AMTI, entreprise marocaine d'excellence, révolutionne les secteurs médicaux et ferroviaires avec des équipements "Made in Morocco".
           </p>
         </div>
-        <Link href="/#about" passHref>
-          <a className="flex items-center gap-1 text-xs text-[#007BFF] hover:underline">
+        <Link href="/#about" passHref legacyBehavior>
+          <a className="flex items-center gap-1 text-xs text-[#2591c2] hover:underline">
             En Savoir Plus <FiArrowRight />
           </a>
         </Link>
       </div>
       <div className="col-span-12 grid grid-cols-2 grid-rows-2 gap-3 bg-white p-6 lg:col-span-8">
-        <Link href="/#strengths" passHref>
+        <Link href="/#strengths" passHref legacyBehavior>
           <a className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100">
             <h3 className="mb-1 font-semibold">Nos Forces</h3>
             <p className="text-xs">
@@ -160,7 +160,7 @@ const AboutUsContent = () => {
             </p>
           </a>
         </Link>
-        <Link href="/#sectors" passHref>
+        <Link href="/#sectors" passHref legacyBehavior>
           <a className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100">
             <h3 className="mb-1 font-semibold">Nos Secteurs D'Activités</h3>
             <p className="text-xs">
@@ -179,11 +179,28 @@ const SectorsContent = () => {
     <div className="w-full bg-white p-6 shadow-none lg:w-[250px] lg:shadow-xl">
       <div className="grid grid-cols-2 lg:grid-cols-1">
         <div className="mb-3 space-y-3 text-lg font-bold py-3">
-          <Link href="/sectors/medical" passHref>
+          <Link href="/sectors/medical" passHref legacyBehavior>
             <a className="block text-sm hover:underline">Médical</a>
           </Link>
-          <Link href="/sectors/railway" passHref>
+          <Link href="/sectors/railway" passHref legacyBehavior>
             <a className="block text-sm hover:underline">Ferroviaire</a>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const ProductsContent = () => {
+  return (
+    <div className="w-full bg-white p-6 shadow-none lg:w-[250px] lg:shadow-xl">
+      <div className="grid grid-cols-2 lg:grid-cols-1">
+        <div className="mb-3 space-y-3 text-lg font-bold py-3">
+          <Link href="/products/medical" passHref legacyBehavior>
+            <a className="block text-sm hover:underline">Médicaux</a>
+          </Link>
+          <Link href="/products/railway" passHref legacyBehavior>
+            <a className="block text-sm hover:underline">Ferroviaires</a>
           </Link>
         </div>
       </div>
@@ -213,7 +230,7 @@ const MobileMenuLink = ({
           className="flex w-full cursor-pointer items-center justify-between border-b border-neutral-300 py-6 text-start text-2xl font-semibold"
           onClick={() => setOpen((pv) => !pv)}
         >
-          <Link href={href}>
+          <Link href={href} legacyBehavior>
             <a onClick={() => setMenuOpen(false)}>{children}</a>
           </Link>
           <motion.div
@@ -227,7 +244,7 @@ const MobileMenuLink = ({
           </motion.div>
         </div>
       ) : (
-        <Link href={href}>
+        <Link href={href} legacyBehavior>
           <a
             className="flex w-full cursor-pointer items-center justify-between border-b border-neutral-300 py-6 text-start text-2xl font-semibold"
             onClick={() => setMenuOpen(false)}
@@ -305,13 +322,16 @@ export default Example;
 
 const LINKS = [
   {
-    text: "Acceuil",
+    text: "Accueil",
     href: "/",
-    component: AboutUsContent,
   },
   {
     text: "À Propos",
     href: "/about",
+  },
+  {
+    text: "Nos Forces",
+    href: "/strengths",
   },
   {
     text: "Nos Secteurs",
@@ -319,8 +339,12 @@ const LINKS = [
     component: SectorsContent,
   },
   {
+    text: "Nos Produits",
+    href: "",
+    component: ProductsContent,
+  },
+  {
     text: "Contact",
     href: "/contact",
   },
 ];
-

@@ -36,7 +36,7 @@ const historiqueData = [
         year: "2025",
         title: "Diversification",
         description:
-            "Diversification stratégique vers l&apos;industrie ferroviaire et d&apos;autres secteurs industriels.",
+            "Diversification stratégique vers l'industrie ferroviaire et d'autres secteurs industriels.",
     },
 ];
 

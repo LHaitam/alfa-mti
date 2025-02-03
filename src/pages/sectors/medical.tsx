@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import FlyoutNav from "../../components/nav/Header";
 import { IntroductionSection } from "../../components/medical/IntroductionSection";
 import { ServicesSection } from "../../components/medical/ServicesSection";
@@ -10,6 +10,12 @@ import Hero from "@/components/hero/Hero";
 import Footer from "@/components/footer/Footer";
 
 const MedicalPage: React.FC = () => {
+
+    useEffect(() => {
+        document.title = "L'Excellence au Service de la Santé - Solutions innovantes pour les infrastructures de santé"; // Set the title of the page
+      }, []);
+
+      
     return (
         <div className="grid bg-white min-h-screen overflow-x-hidden">
             <FlyoutNav />

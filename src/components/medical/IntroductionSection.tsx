@@ -30,8 +30,7 @@ export const IntroductionSection: React.FC = () => {
         <Reveal>
           <p className="leading-relaxed text-black">
             En plus de la fabrication et de la distribution, nous offrons une
-            gamme complète de services tels que la maintenance préventive et
-            corrective, la réparation de mobilier médical, et l&apos;accompagnement
+            gamme complète de services tels que la maintenance, la réparation de mobilier médical, et l&apos;accompagnement
             technique. Ces services nous permettent de garantir une utilisation
             optimale de nos équipements, tout en assurant la satisfaction de
             nos partenaires.

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { IntroductionSection } from "../components/about/IntroductionSection";
 import FlyoutNav from "../components/nav/Header"; // Si exporté par défaut
 import { HistoriqueSection } from "../components/about/HistoriqueSection";
@@ -10,6 +10,12 @@ import Hero from "@/components/hero/Hero";
 import Footer from "@/components/footer/Footer";
 
 const AboutPage: React.FC = () => {
+
+  useEffect(() => {
+    document.title = "À Propos de Notre Entreprise | Innovation et Qualité"; // Set the title of the page
+  }, []);
+
+  
   return (
     <div className="grid bg-white min-h-screen">
       <FlyoutNav />

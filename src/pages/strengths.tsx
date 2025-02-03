@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import FlyoutNav from "../components/nav/Header";
 import Hero from "@/components/hero/Hero";
 import Footer from "@/components/footer/Footer";
@@ -11,7 +11,12 @@ import { TrainingSection } from "../components/strength/TrainingSection";
 import { GlobalVisionSection } from "../components/strength/GlobalVisionSection";
 
 const StrengthsPage: React.FC = () => {
+  useEffect(() => {
+    document.title = "Les forces d'AMTI - Excellence, innovation et engagement vers un avenir durable"; // Set the title of the page
+  }, []);
+  
   return (
+    
     <div className="grid bg-white min-h-screen overflow-x-hidden">
       <FlyoutNav />
       <main className="max-w-screen overflow-hidden">

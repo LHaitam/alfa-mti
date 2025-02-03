@@ -24,7 +24,7 @@ const services = [
   {
     title: "Accompagnement technique",
     description:
-      "Nous vous assistons depuis l&apos;installation des équipements jusqu&apos;à leur mise en service, tout en formant vos équipes pour une utilisation optimale.",
+      "Nous vous assistons depuis l'installation des équipements jusqu'à leur mise en service, tout en formant vos équipes pour une utilisation optimale.",
     icon: "/images/support.png",
   },
 ];

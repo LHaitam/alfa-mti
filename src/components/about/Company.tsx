@@ -6,7 +6,7 @@ export const Company = () => {
       <Reveal>
         <div className="mb-12">
           <img
-            src="/company.jpg"
+            src="/company.png"
             alt="Photo de l'entreprise 1"
             className="w-full h-[300px] object-cover rounded-lg shadow-lg"
           />

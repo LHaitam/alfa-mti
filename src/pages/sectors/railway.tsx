@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import FlyoutNav from "../../components/nav/Header";
 import Hero from "@/components/hero/Hero";
 import Footer from "@/components/footer/Footer";
 
 const RailwayPage: React.FC = () => {
+
+  useEffect(() => {
+    document.title = "Industrie Ferroviaire - Solutions Innovantes et Durables"; // Set the title of the page
+  }, []);
+
+  
   return (
     <div className="grid bg-white min-h-screen">
       <FlyoutNav />

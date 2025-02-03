@@ -52,7 +52,7 @@ export const ProcessSection: React.FC = () => {
     <section id="process" className="section-wrapper text-black">
       <Reveal>
         <>
-          <SectionHeader title="Notre&nbsp;Processus&nbsp;de&nbsp;Fabrication" dir="l" />
+          <SectionHeader title="Notre&nbsp;Processus" dir="l" />
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
               {steps.map((step, index) => (
