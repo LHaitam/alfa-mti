@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const products = [
   { name: "Chariots", image: "/images/products/chariot.png", link: "#" },
-  { name: "Tables", image: "/images/products/ta-04.png", link: "#" },
+  { name: "Tables", image: "/images/products/TA-04.png", link: "#" },
   { name: "Potences", image: "/images/products/potence.png", link: "#" }, // ✅ Ajouté ici
   { name: "Supports", image: "/images/products/support.png", link: "#" },
   { name: "Rayonnages", image: "/images/products/rayonnage.png", link: "#" },
