@@ -41,7 +41,7 @@ export const Contact = () => {
             <Link href="tel:+212522539011">
               <div className="flex items-center justify-center gap-2 w-fit text-lg md:text-2xl whitespace-normal mx-auto hover:text-[#2591c2] transition-colors">
                 <AiFillPhone />
-                <span>+212 5 22 53 90 11</span>
+                <span>+212 5 20 99 87 16</span>
               </div>
             </Link>
             <Link href="tel:+212661311229">
