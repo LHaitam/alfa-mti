@@ -7,25 +7,25 @@ const services = [
     title: "Fabrication sur mesure",
     description:
       "Spécialistes de la conception et fabrication d’équipements médicaux, nous créons des solutions sur mesure adaptées aux besoins spécifiques des établissements de santé.",
-    icon: "/images/fabrication.png",
+    icon: "/images/fabrication.webp",
   },
   {
     title: "Conception personnalisée",
     description:
       "Collaborant étroitement avec nos partenaires, nous concevons des dispositifs uniques répondant aux exigences techniques et opérationnelles les plus strictes.",
-    icon: "/images/design.png",
+    icon: "/images/design.webp",
   },
   {
     title: "Maintenance et réparation",
     description:
       "Nous garantissons la longévité de vos équipements grâce à une maintenance préventive et des réparations rapides, incluant le remplacement des pièces, le soudage et le polissage.",
-    icon: "/images/maintenance.png",
+    icon: "/images/maintenance.webp",
   },
   {
     title: "Accompagnement technique",
     description:
       "Nous vous assistons depuis l'installation des équipements jusqu'à leur mise en service, tout en formant vos équipes pour une utilisation optimale.",
-    icon: "/images/support.png",
+    icon: "/images/support.webp",
   },
 ];
 

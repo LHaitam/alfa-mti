@@ -7,25 +7,25 @@ const valeursData = [
     title: "Engagement envers l'innovation",
     description:
       "AMTI se distingue par son effort constant pour développer des équipements médicaux et industriels innovants, adaptés aux besoins des professionnels et à la souveraineté nationale.",
-    icon: "/str.jpg",
+    icon: "/str.webp",
   },
   {
     title: "Qualité et Fiabilité",
     description:
       "La qualité est au cœur de nos activités, avec des standards élevés tels que 98 % de fiabilité des prestataires et un taux de satisfaction client de 99 %.",
-    icon: "/str1.jpg",
+    icon: "/str1.webp",
   },
   {
     title: "Production locale et Souveraineté industrielle",
     description:
       "AMTI valorise la production locale pour renforcer l’économie marocaine et positionner le Royaume comme un leader dans l’industrie mondiale.",
-    icon: "/str2.jpg",
+    icon: "/str2.webp",
   },
   {
     title: "Orientation client",
     description:
       "AMTI place les besoins de ses clients au centre de ses priorités, offrant des solutions fiables et adaptées, tout en assurant un taux de conversion des leads en clients de 90 %.",
-    icon: "/str3.jpg",
+    icon: "/str3.webp",
   },
 ];
 

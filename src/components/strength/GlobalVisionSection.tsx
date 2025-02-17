@@ -69,7 +69,7 @@ export const GlobalVisionSection: React.FC = () => {
           <div className="relative">
             <motion.div className="mb-12" variants={fadeInVariants}>
               <img
-                src="/str7.jpg"
+                src="/str7.webp"
                 alt="Vision internationale d'AMTI"
                 className="w-full h-[300px] object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
               />

@@ -3,6 +3,8 @@ import { SectionHeader } from "@/components/util/SectionHeader";
 import FlyoutNav from "../../components/nav/Header";
 import Hero from "@/components/hero/Hero"; // Importation de Hero
 import Footer from "@/components/footer/Footer"; // Importation du Footer
+import Intro from "@/components/products/IntroProductsSection"; // Importation de Hero
+
 
 const products = [
     {
@@ -115,10 +117,9 @@ const MedicalSection = () => {
                     </div>
                     <div className="container mx-auto max-w-5xl px-4 md:px-8 space-y-32 overflow-hidden">
                     {/* Section des Produits Médicaux */}
+                    <Intro />
+
                     <section id="medical-products" className="section-wrapper text-black">
-                        <p className="text-center my-4 text-lg">
-                            Découvrez notre large gamme de produits médicaux, adaptés à vos besoins pour les cabinets médicaux, les hôpitaux et autres établissements de santé.
-                        </p>
                         <div className="container mx-auto px-4">
                             {products.map((category, categoryIndex) => (
                                 <div key={categoryIndex} className="mt-10">

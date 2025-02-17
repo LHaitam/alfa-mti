@@ -95,7 +95,7 @@ export const ChiffresClesSection: React.FC = () => {
           {/* Ligne 2 */}
           <div className="row-span-2 col-span-1 sm:col-span-2">
             <img
-              src="/images/amti.jpg"
+              src="/images/amti.webp"
               alt="Entreprise"
               className="w-full h-64 sm:h-full object-cover rounded-lg shadow-md"
             />

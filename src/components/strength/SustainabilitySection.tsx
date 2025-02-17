@@ -78,7 +78,7 @@ export const SustainabilitySection: React.FC = () => {
           <div className="relative">
             <motion.div className="mb-12" variants={fadeInVariants}>
               <img
-                src="/str5.jpg"
+                src="/str5.webp"
                 alt="Développement durable chez AMTI"
                 className="w-full h-[300px] object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
               />

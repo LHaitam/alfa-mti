@@ -42,7 +42,7 @@ export const InnovationSection: React.FC = () => {
           >
             <div className="mb-12">
               <img
-                src="/str.jpg"
+                src="/str.webp"
                 alt="Innovation chez AMTI"
                 className="w-full h-[300px] object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
               />

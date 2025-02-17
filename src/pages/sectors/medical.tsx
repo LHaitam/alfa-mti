@@ -5,7 +5,7 @@ import { ServicesSection } from "../../components/medical/ServicesSection";
 import { ProductsSection } from "../../components/medical/ProductsSection";
 import { ProcessSection } from "../../components/medical/ProcessSection";
 import { Projects } from "../../components/projects/Projects";
-
+import  Map  from "@/components/map/MapMaroc";
 import Hero from "@/components/hero/Hero";
 import Footer from "@/components/footer/Footer";
 
@@ -40,6 +40,7 @@ const MedicalPage: React.FC = () => {
                         <ProcessSection />
                         <ProductsSection />
                         <Projects />
+                        {/* <Map /> */}
                     </div>
                 </div>
                 <Footer />

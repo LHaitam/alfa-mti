@@ -7,43 +7,43 @@ const steps = [
     title: "Stockage des matières premières",
     description:
       "Conserver les matières premières dans des conditions appropriées avant leur utilisation. Cela garantit leur qualité, leur intégrité et leur disponibilité pour la production.",
-    icon: "/images/1.png",
+    icon: "/images/1.webp",
   },
   {
     title: "Détourage laser",
     description:
       "Utilisation de la machine de découpe laser AF 4000 E, capable de découper l'acier doux jusqu'à 12 mm et l'inox jusqu'à 6 mm avec une précision exceptionnelle.",
-    icon: "/images/2.png",
+    icon: "/images/2.webp",
   },
   {
     title: "Débitage",
     description:
       "Découpe rapide et précise grâce à une tronçonneuse puissante fonctionnant à 3800 tours/minute, optimisant le temps et les coûts.",
-    icon: "/images/3.png",
+    icon: "/images/3.webp",
   },
   {
     title: "Soudage",
     description:
       "Réalisation de soudures de haute qualité avec des postes TIG et MIG, opérées par des soudeurs qualifiés pour garantir des performances supérieures.",
-    icon: "/images/4.png",
+    icon: "/images/4.webp",
   },
   {
     title: "Pliage",
     description:
       "Utilisation d'une presse plieuse puissante capable de traiter des pièces allant de 1 à 100 mm, avec une plage d'ouverture flexible de 6 à 630 mm.",
-    icon: "/images/5.png",
+    icon: "/images/5.webp",
   },
   {
     title: "Ébavurage et polissage",
     description:
       "Amélioration esthétique et hygiénique grâce à l'ébavurage manuel ou mécanique et au polissage pour obtenir une surface lisse et brillante.",
-    icon: "/images/6.png",
+    icon: "/images/6.webp",
   },
   {
     title: "Emballage",
     description:
       "Protection des produits contre les dommages et les variations environnementales grâce à un emballage soigné et personnalisé.",
-    icon: "/images/7.png",
+    icon: "/images/7.webp",
   },
 ];
 

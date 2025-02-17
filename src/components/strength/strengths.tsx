@@ -12,7 +12,7 @@ export const Strengths = () => {
             className="bg-gray-300 aspect-square flex items-center justify-center transition-all hover:bg-[#2591c2] hover:grayscale hover:brightness-90 rounded-lg"
           >
             <img
-              src="/str.jpg"
+              src="/str.webp"
               alt="Image 1"
               className="w-full h-full object-cover rounded-lg"
             />
@@ -23,7 +23,7 @@ export const Strengths = () => {
             className="bg-gray-300 aspect-square flex items-center justify-center transition-all hover:bg-[#2591c2] hover:grayscale hover:brightness-90 rounded-lg"
           >
             <img
-              src="/str1.jpg"
+              src="/str1.webp"
               alt="Image 2"
               className="w-full h-full object-cover rounded-lg"
             />
@@ -49,7 +49,7 @@ export const Strengths = () => {
             className="bg-gray-300 aspect-square flex items-center justify-center transition-all hover:bg-[#2591c2] hover:grayscale hover:brightness-90 rounded-lg"
           >
             <img
-              src="/str2.jpg"
+              src="/str2.webp"
               alt="Image 4"
               className="w-full h-full object-cover rounded-lg"
             />
@@ -60,7 +60,7 @@ export const Strengths = () => {
             className="bg-gray-300 aspect-square flex items-center justify-center transition-all hover:bg-[#2591c2] hover:grayscale hover:brightness-90 rounded-lg"
           >
             <img
-              src="/str3.jpg"
+              src="/str3.webp"
               alt="Image 5"
               className="w-full h-full object-cover rounded-lg"
             />

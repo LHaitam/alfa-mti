@@ -38,7 +38,7 @@ export const TrainingSection: React.FC = () => {
           <div className="relative">
             <motion.div className="mb-12" variants={fadeInVariants}>
               <img
-                src="/str6.jpg"
+                src="/str6.webp"
                 alt="Formation chez AMTI"
                 className="w-full h-[300px] object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
               />

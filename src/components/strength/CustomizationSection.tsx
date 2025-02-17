@@ -37,7 +37,7 @@ export const CustomizationSection: React.FC = () => {
           <div className="relative">
             <motion.div className="mb-12" variants={fadeInVariants}>
               <img
-                src="/str4.jpg"
+                src="/str4.webp"
                 alt="Personnalisation chez AMTI"
                 className="w-full h-[300px] object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
               />

@@ -76,7 +76,7 @@ export const LocalManufacturingSection: React.FC = () => {
           >
             <div className="mb-12">
               <img
-                src="/str2.jpg"
+                src="/str2.webp"
                 alt="Made in Morocco"
                 className="w-full h-[300px] object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
               />

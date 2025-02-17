@@ -10,9 +10,9 @@ export const IntroductionSection: React.FC = () => {
         <Reveal>
           <p className="leading-relaxed text-black">
             <span className="font-bold text-[#2591c2]">AMTI</span> est un acteur
-            clé du secteur médical, reconnu pour son expertise dans la
+            clé du secteur médical, reconnu pour son expertise dans <span className="font-bold text-[#2591c2]">la
             fabrication, l&apos;importation, l&apos;exportation, la maintenance et la
-            distribution d&apos;équipements médicaux de haute qualité. Nos produits
+            distribution</span> d&apos;équipements médicaux de haute qualité. Nos produits
             sont conçus pour répondre aux besoins spécifiques des professionnels
             de santé et contribuer à moderniser les infrastructures médicales.
           </p>

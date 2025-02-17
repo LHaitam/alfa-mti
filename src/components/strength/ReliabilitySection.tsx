@@ -91,7 +91,7 @@ export const ReliabilitySection: React.FC = () => {
           <div className="relative h-[300px]">
             <motion.div className="h-full" variants={fadeInVariants}>
               <img
-                src="/str1.jpg"
+                src="/str1.webp"
                 alt="Fiabilité AMTI"
                 className="w-full h-full object-cover rounded-lg shadow-lg"
               />
