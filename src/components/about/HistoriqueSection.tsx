@@ -24,7 +24,7 @@ const historiqueData = [
         year: "2023",
         title: "Investissement",
         description:
-            "Investissement dans la recherche pour développer des produits innovants, tels que des lits d&apos;hôpitaux.",
+            "Investissement dans la recherche pour développer des produits innovants, tels que des lits d'hôpitaux.",
     },
     {
         year: "2024",
