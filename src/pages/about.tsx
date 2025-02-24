@@ -28,7 +28,7 @@ const AboutPage: React.FC = () => {
               subtitle="Engagés Dans L'Innovation Et La Qualité Depuis 2020"
               buttonText="En savoir plus"
               buttonLink="#about"
-              bgVideo="/bg.mp4"
+              bgVideo="/bg.webm"
               overlayOpacity="bg-black/60"
             />          </div>
           {/* Rest of the content */}

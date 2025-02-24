@@ -111,7 +111,7 @@ const MedicalSection = () => {
                     <div className="w-full max-w-full min-h-screen z-10 bg-black bg-opacity-10">
                         <Hero
                             title="Nos Produits Médicaux"
-                            bgVideo="/bg.mp4"
+                            bgVideo="/bg.webm"
                             overlayOpacity="bg-black/60"
                         />
                     </div>

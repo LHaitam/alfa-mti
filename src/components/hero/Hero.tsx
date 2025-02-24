@@ -16,7 +16,7 @@ const Hero: React.FC<HeroProps> = ({
   subtitle,
   buttonText,
   buttonLink,
-  bgVideo = "/bg.mp4",
+  bgVideo = "/bg.webm",
   overlayOpacity = "bg-black/50",
 }) => {
   const handleScroll = () => {

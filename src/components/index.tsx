@@ -21,7 +21,7 @@ export const HomPage = () => {
               subtitle={"Souveraineté Industrielle Marocaine"}
               buttonText="Découvrez notre catalogue"
               buttonLink="/catalogue.pdf"
-              bgVideo="/bg.mp4"
+              bgVideo="/bg.webm"
             />
           </div>
           {/* Rest of the content */}

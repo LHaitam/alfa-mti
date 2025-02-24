@@ -17,7 +17,7 @@ const RailwayPage: React.FC = () => {
           <div className="w-full min-h-screen z-10 bg-black bg-opacity-10">
             <Hero
               title="Nos Produits Ferroviaires"
-              bgVideo="/bg.mp4"
+              bgVideo="/bg.webm"
               overlayOpacity="bg-black/60"
             />
           </div>

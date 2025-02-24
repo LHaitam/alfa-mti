@@ -28,7 +28,7 @@ const MedicalPage: React.FC = () => {
                             subtitle="Des solutions innovantes pour transformer les infrastructures de santé au Maroc et à l'international."
                             buttonText="En savoir plus"
                             buttonLink="#about"
-                            bgVideo="/bg.mp4"
+                            bgVideo="/bg.webm"
                             overlayOpacity="bg-black/60"
                         />
                     </div>

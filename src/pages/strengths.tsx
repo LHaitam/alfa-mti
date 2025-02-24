@@ -28,7 +28,7 @@ const StrengthsPage: React.FC = () => {
               subtitle="Excellence, innovation et engagement vers un avenir durable"
               buttonText="Découvrir nos forces"
               buttonLink="#local-manufacturing"
-              bgVideo="/bg.mp4"
+              bgVideo="/bg.webm"
               overlayOpacity="bg-black/60"
             />
           </div>

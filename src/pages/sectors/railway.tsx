@@ -20,7 +20,7 @@ const RailwayPage: React.FC = () => {
             <Hero
               title="L&apos;Industrie Ferroviaire en Pleine Expansion"
               subtitle="Découvrez comment nous innovons pour transformer le secteur ferroviaire avec des solutions sur mesure et durables."
-              bgVideo="/bg.mp4"
+              bgVideo="/bg.webm"
               overlayOpacity="bg-black/60"
             />
           </div>
