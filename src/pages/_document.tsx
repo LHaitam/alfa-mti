@@ -1,11 +1,12 @@
-// pages/_document.tsx
-
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
     <Html lang="fr">
       <Head>
+        {/* Titre de la page */}
+        <title>AMTI - Alfa Maroc Tech Industrie | Équipements Médicaux et Ferroviaires</title>
+
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
