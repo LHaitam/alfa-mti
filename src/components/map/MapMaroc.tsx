@@ -1,61 +1,49 @@
 import React from "react";
-import { ComposableMap, Geographies, Geography, Marker } from "react-simple-maps";
-import { Tooltip } from "react-tooltip";
-
-const geoUrl = "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson";
-
-const cities: { name: string; coordinates: [number, number]; info: string }[] = [
-    { name: "Casablanca", coordinates: [-7.5898, 33.5731], info: "Capitale économique du Maroc." },
-    { name: "Rabat", coordinates: [-6.8326, 34.0209], info: "Capitale administrative du Maroc." },
-    { name: "Marrakech", coordinates: [-7.9811, 31.6295], info: "Ville touristique emblématique." },
-    { name: "Fès", coordinates: [-4.9998, 34.0331], info: "Capitale culturelle du Maroc." },
-    { name: "Tanger", coordinates: [-5.7998, 35.7595], info: "Grand port et carrefour international." },
-    { name: "Agadir", coordinates: [-9.5981, 30.4278], info: "Station balnéaire prisée." }
-];
+import { AiOutlineArrowRight } from "react-icons/ai";
+import { SectionHeader } from "../util/SectionHeader";
+import Reveal from "../util/Reveal";
+import { Map } from "./Map";
+import Link from "next/link";
 
 
 const MapMaroc = () => {
     return (
-        <div className="relative">
-            <Tooltip id="city-tooltip" />
-            <ComposableMap projection="geoMercator" projectionConfig={{ scale: 1200 }} width={800} height={600}>
-                <Geographies geography={geoUrl}>
-                    {({ geographies }: { geographies: any[] }) => geographies.map((geo: any) => (
-
-                        <Geography
-                            key={geo.rsmKey}
-                            geography={geo}
-                            fill="#DDD"
-                            stroke="#FFF"
-                            className="transition-colors duration-300 hover:fill-blue-300"
-                        />
-                    ))
-                    }
-                </Geographies>
-                {cities.map((city, index) => (
-                    <Marker key={index} coordinates={city.coordinates}>
-                        <circle
-                            cx={0}
-                            cy={0}
-                            r={6}
-                            fill="#ff5733"
-                            stroke="#fff"
-                            strokeWidth={2}
-                            data-tip={city.info}
-                            data-for="city-tooltip"
-                        />
-                        <text
-                            textAnchor="middle"
-                            y={-10}
-                            className="fill-black text-xs font-bold"
-                        >
-                            {city.name}
-                        </text>
-                    </Marker>
-                ))}
-            </ComposableMap>
-        </div>
+        <section id="about" className="section-wrapper text-black">
+              <SectionHeader title="Notre&nbsp;Empreinte&nbsp;Géographique" dir="l" />
+              <div className="grid grid grid-cols-2 gap-8">
+                <div className="space-y-4">
+                  <Reveal>
+                    <p className="leading-relaxed text-black">
+                      <span className="font-bold text-[#2591c2]">AMTI</span>, a mis en place une stratégie de développement 
+                      ambitieuse visant à renforcer son empreinte géographique. Notre objectif est de couvrir de manière 
+                      exhaustive l'ensemble du territoire national, en se concentrant en particulier sur les villes où 
+                      les services de santé sont insuffisants, notamment 
+                      <span className="font-bold text-[#2591c2]"> Tanger</span>,
+                      <span className="font-bold text-[#2591c2]"> Tétouan</span>,
+                      <span className="font-bold text-[#2591c2]"> Salé</span>,
+                      <span className="font-bold text-[#2591c2]"> Kénitra</span>, 
+                      <span className="font-bold text-[#2591c2]"> Meknès</span>, 
+                      <span className="font-bold text-[#2591c2]"> Fès</span>, 
+                      <span className="font-bold text-[#2591c2]"> Khouribga</span>, 
+                      <span className="font-bold text-[#2591c2]"> Béni Mellal</span>, 
+                      <span className="font-bold text-[#2591c2]"> Mohammedia</span>, 
+                      <span className="font-bold text-[#2591c2]"> Casablanca</span>, 
+                      <span className="font-bold text-[#2591c2]"> El Jadida</span>, 
+                      <span className="font-bold text-[#2591c2]"> Safi</span>, 
+                      <span className="font-bold text-[#2591c2]"> Essaouira</span>, 
+                      <span className="font-bold text-[#2591c2]"> Agadir</span>, 
+                      <span className="font-bold text-[#2591c2]"> Marrakech</span>  et 
+                      <span className="font-bold text-[#2591c2]"> Errachidia</span>.
+                    </p>
+                  </Reveal>
+                </div>
+                <Map />
+              </div>
+            </section>
     );
 };
 
 export default MapMaroc;
+
+
+

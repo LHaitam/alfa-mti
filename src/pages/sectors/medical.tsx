@@ -39,8 +39,8 @@ const MedicalPage: React.FC = () => {
                         <ServicesSection />
                         <ProcessSection />
                         <ProductsSection />
+                        <Map />
                         <Projects />
-                        {/* <Map /> */}
                     </div>
                 </div>
                 <Footer />

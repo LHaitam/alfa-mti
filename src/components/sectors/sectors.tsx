@@ -24,7 +24,7 @@ export const Sectors = () => {
                             <div className="relative group">
                                 <Link href="/sectors/medical">
                                     <img
-                                        src="/images/medical.webp"
+                                        src="/images/medical.png"
                                         alt="Secteur Médical"
                                         className="w-full h-64 object-cover rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105"
                                     />
