@@ -12,11 +12,11 @@ import { GlobalVisionSection } from "../components/strength/GlobalVisionSection"
 
 const StrengthsPage: React.FC = () => {
   useEffect(() => {
-    document.title = "Les forces d'AMTI - Excellence, innovation et engagement vers un avenir durable"; // Set the title of the page
+    // Dynamically set the document title for SEO
+    document.title = "Les forces d'AMTI - Excellence, innovation et engagement vers un avenir durable";
   }, []);
-  
+
   return (
-    
     <div className="grid bg-white min-h-screen overflow-x-hidden">
       <FlyoutNav />
       <main className="max-w-screen overflow-hidden">
@@ -33,7 +33,7 @@ const StrengthsPage: React.FC = () => {
             />
           </div>
 
-          {/* Rest of the content */}
+          {/* Main content sections */}
           <div className="container mx-auto max-w-5xl px-4 md:px-8 space-y-32 overflow-hidden">
             <LocalManufacturingSection />
             <InnovationSection />

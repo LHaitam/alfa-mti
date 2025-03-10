@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import { SectionHeader } from "@/components/util/SectionHeader";
 import FlyoutNav from "../../components/nav/Header";
 import Hero from "@/components/hero/Hero"; // Importation de Hero
 import Footer from "@/components/footer/Footer"; // Importation du Footer
 import Intro from "@/components/products/IntroProductsSection"; // Importation de Hero
-
+import Image from "next/image"; // Optimisation des images avec Next.js
+import Head from "next/head"; // Pour la gestion SEO
 
 const products = [
     {
@@ -99,57 +100,73 @@ const products = [
 ];
 
 const MedicalSection = () => {
-    useEffect(() => {
-        document.title = "Nos Produits Médicaux"; // Set the title of the page
-    }, [])
-    return (
-        <div className="grid bg-white min-h-screen overflow-x-hidden">
-            <FlyoutNav />
-            <main className="max-w-screen overflow-hidden">
-                <div className="space-y-32 pb-24">
-                    {/* Section Hero */}
-                    <div className="w-full max-w-full min-h-screen z-10 bg-black bg-opacity-10">
-                        <Hero
-                            title="Nos Produits Médicaux"
-                            bgVideo="/bg.webm"
-                            overlayOpacity="bg-black/60"
-                        />
+  useEffect(() => {
+    document.title = "Nos Produits Médicaux"; // Set the title of the page
+  }, []);
+
+  return (
+    <>
+      {/* Balises meta pour le SEO */}
+      <Head>
+        <title>Nos Produits Médicaux</title>
+        <meta
+          name="description"
+          content="Découvrez notre large gamme de produits médicaux, allant des chariots aux tables et accessoires, conçus pour les professionnels de la santé."
+        />
+        <meta name="robots" content="index, follow" />
+      </Head>
+
+      <div className="grid bg-white min-h-screen overflow-x-hidden">
+        <FlyoutNav />
+        <main className="max-w-screen overflow-hidden">
+          <div className="space-y-32 pb-24">
+            {/* Section Hero */}
+            <div className="w-full max-w-full min-h-screen z-10 bg-black bg-opacity-10">
+              <Hero
+                title="Nos Produits Médicaux"
+                bgVideo="/bg.webm"
+                overlayOpacity="bg-black/60"
+              />
+            </div>
+
+            <div className="container mx-auto max-w-5xl px-4 md:px-8 space-y-32 overflow-hidden">
+              {/* Section des Produits Médicaux */}
+              <Intro />
+
+              <section id="medical-products" className="section-wrapper text-black">
+                <div className="container mx-auto px-4">
+                  {products.map((category, categoryIndex) => (
+                    <div key={categoryIndex} className="mt-10">
+                      <h2 className="text-2xl font-bold mb-6">{category.category}</h2>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        {category.items.map((item, itemIndex) => (
+                          <div key={itemIndex} className="relative group cursor-pointer">
+                            <Image
+                              src={item.image}
+                              alt={item.name}
+                              width={500} // Assurez-vous de définir des tailles adaptées
+                              height={500}
+                              className="w-full h-48 object-cover rounded-lg transform transition duration-300 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-lg opacity-100 group-hover:bg-opacity-60 transition duration-300">
+                              <span className="text-white text-lg font-bold text-center">{item.name}</span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                    <div className="container mx-auto max-w-5xl px-4 md:px-8 space-y-32 overflow-hidden">
-                    {/* Section des Produits Médicaux */}
-                    <Intro />
-
-                    <section id="medical-products" className="section-wrapper text-black">
-                        <div className="container mx-auto px-4">
-                            {products.map((category, categoryIndex) => (
-                                <div key={categoryIndex} className="mt-10">
-                                    <h2 className="text-2xl font-bold mb-6">{category.category}</h2>
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                                        {category.items.map((item, itemIndex) => (
-                                            <div key={itemIndex} className="relative group cursor-pointer">
-                                                <img
-                                                    src={item.image}
-                                                    alt={item.name}
-                                                    className="w-full h-48 object-cover rounded-lg transform transition duration-300 group-hover:scale-105"
-                                                />
-                                                <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-lg opacity-100 group-hover:bg-opacity-60 transition duration-300">
-                                                    <span className="text-white text-lg font-bold text-center">{item.name}</span>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </section>
-
-                    {/* Footer Section */}
+                  ))}
                 </div>
-                </div>
-                <Footer />
-            </main>
-        </div>
-    );
+              </section>
+            </div>
+
+            {/* Footer Section */}
+            <Footer />
+          </div>
+        </main>
+      </div>
+    </>
+  );
 };
 
 export default MedicalSection;

@@ -24,19 +24,19 @@ const ContactPage: React.FC = () => {
               overlayOpacity="bg-black/60"
             />
           </div>
+
           {/* Contact Form and Info Section */}
           <div className="container mx-auto max-w-5xl px-4 md:px-8 space-y-32 overflow-hidden">
             <div className="mx-auto max-w-7xl px-4 md:px-8 py-12 space-y-16">
-            <p className="text-center text-black my-4 text-lg">
-              Nous sommes disponibles pour répondre à toutes vos questions et vous accompagner dans vos projets.            </p>
+              <p className="text-center text-black my-4 text-lg">
+                Nous sommes disponibles pour répondre à toutes vos questions et vous accompagner dans vos projets.
+              </p>
 
               {/* Contact Form */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 {/* Form Section */}
                 <div>
-                  <h2 className="text-2xl font-bold text-[#154a77] mb-4">
-                    Envoyez-nous un message
-                  </h2>
+                  <h2 className="text-2xl font-bold text-[#154a77] mb-4">Envoyez-nous un message</h2>
                   <form className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <input
@@ -45,6 +45,7 @@ const ContactPage: React.FC = () => {
                         placeholder="Nom & Prénom*"
                         className="text-black w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2591c2] focus:outline-none"
                         required
+                        aria-label="Nom et prénom"
                       />
                       <input
                         type="email"
@@ -52,35 +53,30 @@ const ContactPage: React.FC = () => {
                         placeholder="E-mail*"
                         className="text-black w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2591c2] focus:outline-none"
                         required
+                        aria-label="Email"
                       />
                     </div>
                     <input
                       type="tel"
                       name="phone"
                       placeholder="Téléphone*"
-                      className=" text-black w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2591c2] focus:outline-none"
+                      className="text-black w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2591c2] focus:outline-none"
                       required
+                      aria-label="Téléphone"
                     />
                     <select
                       name="subject"
                       className="text-black w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2591c2] focus:outline-none"
                       required
+                      aria-label="Objet de la demande"
                     >
                       <option value="" disabled selected>
                         Objet de votre demande*
                       </option>
-                      <option className="text-black" value="information">
-                        Demande d'information
-                      </option>
-                      <option className="text-black" value="reclamation">
-                        Réclamation
-                      </option>
-                      <option className="text-black" value="recruitment">
-                        Recrutement/Stage
-                      </option>
-                      <option className="text-black" value="other">
-                        Autres
-                      </option>
+                      <option value="information">Demande d'information</option>
+                      <option value="reclamation">Réclamation</option>
+                      <option value="recruitment">Recrutement/Stage</option>
+                      <option value="other">Autres</option>
                     </select>
                     <textarea
                       name="message"
@@ -88,7 +84,9 @@ const ContactPage: React.FC = () => {
                       placeholder="Votre message*"
                       className="text-black w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2591c2] focus:outline-none"
                       required
+                      aria-label="Votre message"
                     ></textarea>
+
                     {/* Centering the button */}
                     <div className="flex justify-center">
                       <button
@@ -97,16 +95,13 @@ const ContactPage: React.FC = () => {
                       >
                         Envoyer
                       </button>
-
                     </div>
                   </form>
                 </div>
 
                 {/* Contact Information */}
                 <div>
-                  <h2 className="text-2xl font-bold text-[#154a77] mb-4">
-                    Informations de Contact
-                  </h2>
+                  <h2 className="text-2xl font-bold text-[#154a77] mb-4">Informations de Contact</h2>
                   <ul className="space-y-4 text-lg text-gray-600">
                     <li>
                       <strong>Adresse : </strong>
