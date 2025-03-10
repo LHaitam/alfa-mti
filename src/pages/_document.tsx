@@ -6,6 +6,9 @@ export default function Document() {
   return (
     <Html lang="fr">
       <Head>
+        {/* Titre du document */}
+        <title>ALFA MAROC TECH INDUSTRIE - Innovation et Excellence Industrielle au Maroc</title>
+
         {/* Favicon et autres liens de base */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
