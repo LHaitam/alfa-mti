@@ -8,7 +8,7 @@ import Link from "next/link";
 export const Projects = () => {
   return (
     <section className="section-wrapper text-black" id="projects">
-      <SectionHeader title="Nos&nbsp;Grand&nbsp;Projets" dir="l" />
+      <SectionHeader title="Nos&nbsp;Grand&nbsp;Projets" dir="r" />
       <Reveal>
         <p className="text-center text-justify text-black mb-12 leading-relaxed">
           <span className="font-bold text-[#2591c2]">AMTI </span>

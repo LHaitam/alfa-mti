@@ -9,8 +9,8 @@ import Link from "next/link";
 const MapMaroc = () => {
     return (
         <section id="about" className="section-wrapper text-black">
-              <SectionHeader title="Notre&nbsp;Empreinte&nbsp;Géographique" dir="l" />
-              <div className="grid grid grid-cols-2 gap-8">
+              <SectionHeader title="Empreinte&nbsp;Géographique" dir="l" />
+              <div className="grid grid grid-cols-1 gap-8 sm:grid-cols-2">
                 <div className="space-y-4">
                   <Reveal>
                     <p className="leading-relaxed text-black">

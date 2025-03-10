@@ -61,7 +61,7 @@ export const NosReferencesSection: React.FC = () => {
                     {/* Description */}
                     <div className="space-y-6">
                         <p className="leading-relaxed text-lg text-black">
-                            <span className="font-bold text-2xl text-[#2591c2]">
+                            <span className="font-bold text-lg text-[#2591c2]">
                                 Une présence nationale et sectorielle :
                             </span>
                         </p>
@@ -74,7 +74,7 @@ export const NosReferencesSection: React.FC = () => {
                     {secteursData.map((secteurData: Secteur, index: number) => (
                         <div key={index} className="space-y-8">
                             {/* Secteur Title */}
-                            <h3 className="text-xl font-bold text-[#2591c2]">
+                            <h3 className="text-lg font-bold text-[#2591c2]">
                                 {secteurData.secteur}
                             </h3>
 

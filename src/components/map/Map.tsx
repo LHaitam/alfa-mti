@@ -8,7 +8,7 @@ export const Map = () => {
           <img
             src="/map.png"
             alt="Photo de la carte du Maroc"
-            className="w-full h-[400px] object-cover"
+            className="w-full h-[300px] object-cover md:h-[400px]"
           />
         </div>
       </Reveal>

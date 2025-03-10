@@ -40,11 +40,11 @@ export const NosValeursSection: React.FC = () => {
     <section id="values" className="section-wrapper text-black">
       <SectionHeader title="Nos&nbsp;Valeurs" dir="l" />
       <Reveal>
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-between max-w-6xl mx-auto mt-8 gap-8">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-between max-w-6xl mx-auto gap-8">
           {/* Partie Gauche */}
           <div className="flex-1 space-y-4">
             <p className="leading-relaxed text-black text-lg">
-              <span className="font-bold text-2xl text-[#2591c2]">
+              <span className="font-bold textlg text-[#2591c2]">
                 Des valeurs au cœur de notre mission :
               </span>
             </p>
