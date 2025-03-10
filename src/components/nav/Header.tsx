@@ -51,7 +51,7 @@ const Logo = ({ color = "white", size = 100 }: { color?: string; size?: number }
   return (
     <div className="flex items-center gap-2">
       <img
-        src="/logo.png"
+        src="/logo.webp"
         alt="Logo"
         className="block"
         style={{

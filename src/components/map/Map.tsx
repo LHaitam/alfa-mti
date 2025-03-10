@@ -6,7 +6,7 @@ export const Map = () => {
       <Reveal>
         <div className="mb-12">
           <img
-            src="/map.png"
+            src="/map.webp"
             alt="Photo de la carte du Maroc"
             className="w-full h-[300px] object-cover md:h-[400px]"
           />

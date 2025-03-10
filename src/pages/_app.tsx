@@ -14,6 +14,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="AMTI - Alfa Maroc Tech Industrie : équipements médicaux et ferroviaires innovants." />
         <meta name="keywords" content="AMTI, équipements médicaux, ferroviaires, chariots médicaux, dispositifs médicaux, Maroc" />
         <meta name="author" content="AMTI - Alfa Maroc Tech Industrie" />
+        
+        {/* Titre global pour l'application */}
+        <title>ALFA MAROC TECH INDUSTRIE - Innovation et Excellence Industrielle</title>
       </Head>
       <Component {...pageProps} />
     </>

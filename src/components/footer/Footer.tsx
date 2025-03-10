@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           {/* Logo and Contact */}
           <div className="space-y-4 text-center md:text-left md:w-1/3">
             <img
-              src="/logo.png"
+              src="/logo.webp"
               alt="AMTI Logo"
               className="h-20 mx-auto md:mx-0"
             />
