@@ -32,14 +32,9 @@ const Hero: React.FC<HeroProps> = ({
     <section className="relative text-slat-100 overflow-hidden min-h-screen flex items-center justify-center">
       {/* Background Video */}
       <div className="absolute inset-0 z-0">
-        <video
-          className="w-full h-full object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-        >
-          <source src={bgVideo} type="video/mp4" />
+        <video className="w-full h-full object-cover" autoPlay loop muted playsInline>
+          <source src="/bg.mp4" type="video/mp4" />
+          <source src="/bg.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
         {/* Overlay */}
