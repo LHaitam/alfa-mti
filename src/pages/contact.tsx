@@ -104,9 +104,12 @@ const ContactPage: React.FC = () => {
                   <h2 className="text-2xl font-bold text-[#154a77] mb-4">Informations de Contact</h2>
                   <ul className="space-y-4 text-lg text-gray-600">
                     <li>
-                      <strong>Adresse : </strong>
-                      Aéropôle de l'Aéroport Med V, 27000 Nouasseur, Maroc
-                    </li>
+  <strong>Adresse :</strong>
+  <a href="https://maps.app.goo.gl/iyue4eZtEJ75BaxT6" target="_blank">
+    Z.I. Bouzanine, R.N. 9 km 21 NOUASSEUR
+  </a>
+</li>
+
                     <li>
                       <strong>Téléphone : </strong>
                       <a
@@ -137,7 +140,7 @@ const ContactPage: React.FC = () => {
                   {/* Google Map */}
                   <div className="mt-8">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.231701330598!2d-7.570195923630528!3d33.4557651746707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd3be8b7c03f%3A0xa5fb6fa544b5b13b!2sCF68%2BRJ7%2C%20N9%2C%20Deroua!5e0!3m2!1sen!2sma!4v1692725882023!5m2!1sen!2sma"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d541.660143117096!2d-7.533354094200967!3d33.41203607536357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda630c82e0c1e2d%3A0x29872512623e0e4b!2sCF68%2BRJ7%2C%20N9%2C%20Deroua!5e1!3m2!1sfr!2sma!4v1744367353864!5m2!1sfr!2sma"
                       width="100%"
                       height="300"
                       allowFullScreen={false}
