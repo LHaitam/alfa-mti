@@ -40,8 +40,9 @@ const Footer: React.FC = () => {
               </Link>
             </p>
             <p className="text-sm font-bold">
-              Adresse : Aéropôle de l'Aéroport Med V, <br /> 27000 Nouasseur,
-              Maroc
+              Adresse : <a href="https://maps.app.goo.gl/iyue4eZtEJ75BaxT6" target="_blank">
+    Z.I. Bouzanine, R.N. 9 km 21 NOUASSEUR
+  </a>
             </p>
           </div>
 
